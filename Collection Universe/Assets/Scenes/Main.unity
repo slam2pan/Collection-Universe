@@ -619,6 +619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputHandler: {fileID: 515869856}
+  currentWorld: 
+  treasureBox: {fileID: 11400000, guid: 17c8419c92389eb4abc23c45234fd548, type: 2}
 --- !u!4 &515869855
 Transform:
   m_ObjectHideFlags: 0

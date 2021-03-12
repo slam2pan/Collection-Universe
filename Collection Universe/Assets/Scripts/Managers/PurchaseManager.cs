@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collection : MonoBehaviour
+public class PurchaseManager : MonoBehaviour
 {
     #region Singleton
-    
-    public static Collection instance;
+
+    public static PurchaseManager instance;
 
     void Awake()
     {
@@ -17,12 +17,5 @@ public class Collection : MonoBehaviour
     }
 
     #endregion
-
-    public List<Artifact> artifacts = new List<Artifact>();
-
-    public void Add (Artifact artifact)
-    {
-        artifacts.Add(artifact);
-    }
 
 }

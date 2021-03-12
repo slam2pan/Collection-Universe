@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44da481e61386184ea149d399212e4f5, type: 3}
-  m_Name: New artifact
+  m_Name: Guitar
   m_EditorClassIdentifier: 
-  name: 
-  set: 0
-  rarity: 0
+  name: Guitar
+  rarity: 2
+  set: {fileID: 11400000, guid: 741a303990d58884997d97832d1a320d, type: 2}
   icon: {fileID: 0}
-  set: 0

@@ -2,7 +2,28 @@
 
 public class GameManager : MonoBehaviour
 {
+    #region Singleton
+
+    public static GameManager instance;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+    }
+
+    #endregion
+
     [SerializeField] private InputHandler inputHandler;
+    public string currentWorld;
+    public TreasureBox treasureBox;
+
+    void Start()
+    {
+        currentWorld = "World1";    
+    }
 
     // Update is called once per frame
     void Update()
@@ -11,5 +32,7 @@ public class GameManager : MonoBehaviour
         {
             BalanceManager.Balance += 1;
         }
+
+        Debug.Log(treasureBox.generateReward("World1"));
     }
 }

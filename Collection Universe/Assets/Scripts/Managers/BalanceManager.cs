@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class BalanceManager : MonoBehaviour
 {
-    public static BalanceManager instance;
-
     [SerializeField] private BalanceText balanceText;
     public static int Balance;
     private int startingBalance = 0;
+
+    #region Singleton
+
+    public static BalanceManager instance;
 
     void Awake()
     {
@@ -17,6 +19,8 @@ public class BalanceManager : MonoBehaviour
         else if (instance != this)
             Destroy(gameObject);
     }
+
+    #endregion
 
     void Start()
     {

@@ -2,13 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Artifact : ScriptableObject
+public abstract class Artifact : ScriptableObject
 {
-    public enum Set {};
-    public enum Rarity {common, rare, epic, mythic, exotic};
-
     new public string name;
-    public Set set;
     public Rarity rarity;
+    [SerializeField] public Set set;
     public Sprite icon = null;
 }
