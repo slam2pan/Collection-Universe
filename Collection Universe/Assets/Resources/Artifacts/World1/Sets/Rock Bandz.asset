@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8042cd8e8759b4596568252793d501, type: 3}
+  m_Name: Rock Bandz
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11400000, guid: deaa7db194aab2d4dab1cf7a34efdc66, type: 2}
+  - {fileID: 11400000, guid: 32812599eb15b6242b68bbd019ca9539, type: 2}
+  - {fileID: 11400000, guid: f389a56a7a4f89944bd135052dfcf436, type: 2}
+  - {fileID: 11400000, guid: 72f295148e9277940bfbf7fbe6f6ccdf, type: 2}
+  - {fileID: 11400000, guid: 76efdb6177f0e714db20bfa212f3f72e, type: 2}
+  - {fileID: 11400000, guid: b0f261ee23a130641b58a8613953502d, type: 2}
+  itemsCollected: 0

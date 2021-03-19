@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44da481e61386184ea149d399212e4f5, type: 3}
-  m_Name: MicStand
+  m_Name: Fairy
   m_EditorClassIdentifier: 
-  name: MicStand
-  rarity: 0
-  set: {fileID: 11400000, guid: 741a303990d58884997d97832d1a320d, type: 2}
+  rarity: 1
+  set: {fileID: 11400000, guid: 18d9c75f3d688464ea84e191046c4400, type: 2}
   icon: {fileID: 0}

@@ -6,7 +6,7 @@ public class BalanceManager : MonoBehaviour
 {
     [SerializeField] private BalanceText balanceText;
     public static int Balance;
-    private int startingBalance = 0;
+    private int startingBalance = 2000;
 
     #region Singleton
 
@@ -32,15 +32,16 @@ public class BalanceManager : MonoBehaviour
         balanceText.UpdateBalanceText(Balance);
     }
 
-    public void PurchaseLootBox(int amount)
+    public bool PurchaseLootBox(int amount)
     {
-        if (Balance > amount)
+        if (Balance >= amount)
         {
             Balance -= amount;
-            Debug.Log("We bought a box!");
+            return true;
         } else 
         {
             Debug.Log("Too poor to buy box");
+            return false;
         }
     }
 

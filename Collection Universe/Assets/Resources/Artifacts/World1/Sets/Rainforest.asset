@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8042cd8e8759b4596568252793d501, type: 3}
   m_Name: Rainforest
   m_EditorClassIdentifier: 
-  name: Rainforest
-  itemsInSet: 6
+  items:
+  - {fileID: 11400000, guid: 41d9f237fdf47e54a9a55143236dac03, type: 2}
+  - {fileID: 11400000, guid: da7e0c520bd81c447bb3b6e9a56a1e53, type: 2}
+  - {fileID: 11400000, guid: b7856b163c187a84dbbfa03d7c9cb2a0, type: 2}
+  - {fileID: 11400000, guid: 8c0b888ec2980e348a847459cf56c72f, type: 2}
+  - {fileID: 11400000, guid: e8010c7749eb814498724d666a70bc5c, type: 2}
+  - {fileID: 11400000, guid: c49b1209c765a0d49b421c6f716a6662, type: 2}
+  itemsCollected: 0

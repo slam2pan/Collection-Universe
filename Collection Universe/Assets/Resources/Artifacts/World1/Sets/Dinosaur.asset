@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8042cd8e8759b4596568252793d501, type: 3}
+  m_Name: Dinosaur
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11400000, guid: c7e143cfa5084954f9742f03aef18ef2, type: 2}
+  - {fileID: 11400000, guid: 5b6ace238397da54cbe7761eeca4ce9d, type: 2}
+  - {fileID: 11400000, guid: ca5c9b4e088bab54fa7aeb95bea15869, type: 2}
+  - {fileID: 11400000, guid: 736bcd1b102bce44cb2287a7a47a5da7, type: 2}
+  - {fileID: 11400000, guid: 3a0c4bc0a1bec5f49a67fe76ed03bd7e, type: 2}
+  - {fileID: 11400000, guid: 1363bd011667e1944828a76c74a1e489, type: 2}
+  itemsCollected: 0

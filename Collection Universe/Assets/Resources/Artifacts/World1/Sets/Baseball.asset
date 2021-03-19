@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8042cd8e8759b4596568252793d501, type: 3}
+  m_Name: Baseball
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11400000, guid: 2dbf38abbae402d438aed6fd89f29097, type: 2}
+  - {fileID: 11400000, guid: 069945d2b38b2aa4782315ab76e906d5, type: 2}
+  - {fileID: 11400000, guid: 0d72b359fc43d46469db673ca8cb264e, type: 2}
+  - {fileID: 11400000, guid: febbf04d9fbb19848948b1bbcddafdab, type: 2}
+  - {fileID: 11400000, guid: 9e1449be10a53644aaab3523ff782a20, type: 2}
+  - {fileID: 11400000, guid: fc00c48985645444f8f47313243b5c30, type: 2}
+  itemsCollected: 0

@@ -17,8 +17,7 @@ public class GameManager : MonoBehaviour
     #endregion
 
     [SerializeField] private InputHandler inputHandler;
-    public string currentWorld;
-    public TreasureBox treasureBox;
+    public static string currentWorld;
 
     void Start()
     {
@@ -32,7 +31,5 @@ public class GameManager : MonoBehaviour
         {
             BalanceManager.Balance += 1;
         }
-
-        Debug.Log(treasureBox.generateReward("World1"));
     }
 }
