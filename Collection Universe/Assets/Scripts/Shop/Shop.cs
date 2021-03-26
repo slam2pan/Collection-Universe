@@ -1,14 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Shop : MonoBehaviour
 {
     public GameObject shopMenu;
+    public Animator animator;
 
-    public void ToggleShopMenu()
+    public void OpenShopMenu()
     {
-        shopMenu.SetActive(!shopMenu.activeSelf);
+        shopMenu.SetActive(true);
+    }
+
+    public void CloseShopMenu()
+    {
+        shopMenu.SetActive(false);
+    }
+
+    public void ClickBuy()
+    {
+        animator.SetTrigger("Click");
     }
 
 }

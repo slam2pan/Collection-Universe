@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d8042cd8e8759b4596568252793d501, type: 3}
   m_Name: Drink
   m_EditorClassIdentifier: 
-  itemsInSet: 7
+  items:
+  - {fileID: 11400000, guid: abe4fc9facdade04ba128502aeb0cf84, type: 2}
+  - {fileID: 11400000, guid: 9dc871df0058e9f4da4fee58c7e98bcd, type: 2}
+  - {fileID: 11400000, guid: c64e960d060843b49ae19b5f15be1b7e, type: 2}
+  - {fileID: 11400000, guid: 9fb2616c653177d4abdc9d53a75ad6d3, type: 2}
+  - {fileID: 11400000, guid: 55e6819f0be80604a90008b8b29cc8d8, type: 2}
+  - {fileID: 11400000, guid: ff943dcc12e46ce4781ee4ad31664203, type: 2}
+  - {fileID: 11400000, guid: f60acfacce096134fbb8563cb993d31f, type: 2}
+  icon: {fileID: 0}

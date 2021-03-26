@@ -19,4 +19,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 66bf98ca8591cf145acebbd7b19decdf, type: 2}
   - {fileID: 11400000, guid: f8167bf1924c3c24782f2b6dcdfd2f7a, type: 2}
   - {fileID: 11400000, guid: af8ee7fe4fac7c64086320fd1a42bf9b, type: 2}
-  itemsCollected: 0
+  icon: {fileID: 21300000, guid: 05b570db36bb7a74ab95561af6aae460, type: 3}

@@ -9,6 +9,9 @@ public class Collection : MonoBehaviour
     private Dictionary<Artifact, int> artifactsCollected;
     private Dictionary<Set, int> setCollected;
 
+    public delegate void OnArtifactAdded();
+    public OnArtifactAdded onArtifactAddedCallback;
+
     #region Singleton
 
     public static Collection instance;
@@ -27,7 +30,7 @@ public class Collection : MonoBehaviour
     {
         artifactsCollected = new Dictionary<Artifact, int>();
         setCollected = new Dictionary<Set, int>();
-        collectionUI = GameObject.Find("Canvas").GetComponent<CollectionUI>();
+        collectionUI = GameObject.Find("UICanvas").GetComponent<CollectionUI>();
     }
 
     public void Add(Artifact artifact)
@@ -49,15 +52,26 @@ public class Collection : MonoBehaviour
             artifactsCollected.Add(artifact, 1);
         } 
 
+        // invoke a method for anything subscribed to the callback
+        // if nothing is subscribed, then dont invoke
+        if (onArtifactAddedCallback != null)
+        {
+            onArtifactAddedCallback.Invoke();
+        }
         collectionUI.UpdateSetUI(artifact.set);
     }
 
-    public bool isArtifactCollected(Artifact artifact)
+    public bool IsArtifactCollected(Artifact artifact)
     {
         return artifactsCollected.ContainsKey(artifact);
     }
 
-    public int setItemsCollected(Set set)
+    public int ArtifactsCollected()
+    {
+        return artifactsCollected.Count;
+    }
+
+    public int SetItemsCollected(Set set)
     {
         return setCollected.TryGetValue(set, out int value) ? value : 0;
     }

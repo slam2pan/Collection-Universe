@@ -9,7 +9,7 @@ public class SetSlot : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        collectionUI = GameObject.Find("Canvas").GetComponent<CollectionUI>();
+        collectionUI = GameObject.Find("UICanvas").GetComponent<CollectionUI>();
         button = GetComponentInChildren<Button>();
         button.onClick.AddListener(() => collectionUI.LoadArtifacts(this.gameObject.name));
     }

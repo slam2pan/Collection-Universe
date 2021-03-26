@@ -12,6 +12,11 @@ public class SetMenu : MonoBehaviour
         slots = setsParent.GetComponentsInChildren<SetSlot>(true);
     }
 
+    void Start()
+    {
+        ChangeSetsInMenu();
+    }
+
     void ChangeSetsInMenu()
     {
         set = Resources.LoadAll<Set>("Artifacts/" + GameManager.currentWorld + "/Sets");
@@ -23,6 +28,7 @@ public class SetMenu : MonoBehaviour
             if (i < set.Length)
             {
                 slots[i].gameObject.name = set[i].name;
+                slots[i].gameObject.GetComponentInChildren<Image>().sprite = set[i].icon;
                 slots[i].gameObject.GetComponentInChildren<Text>().text = set[i].name;
             } else 
             {

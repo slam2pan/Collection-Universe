@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class BalanceText : MonoBehaviour
@@ -13,8 +11,8 @@ public class BalanceText : MonoBehaviour
         balanceText = GetComponent<Text>();
     }
 
-    public void UpdateBalanceText(int balanceAmount) 
+    public void UpdateBalanceText(float balanceAmount) 
     {
-        balanceText.text = "Balance: " + balanceAmount;
+        balanceText.text = "Bitcoin: " + balanceAmount;
     }
 }

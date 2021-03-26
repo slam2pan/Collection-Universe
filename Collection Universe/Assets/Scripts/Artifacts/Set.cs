@@ -6,4 +6,5 @@ using UnityEngine;
 public class Set : ScriptableObject
 {
     public List<Artifact> items;
+    public Sprite icon = null;
 }

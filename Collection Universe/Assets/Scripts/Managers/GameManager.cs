@@ -18,6 +18,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private InputHandler inputHandler;
     public static string currentWorld;
+    private float incomeAmount;
+    public float IncomeAmount { get {return incomeAmount;} set {incomeAmount = value;} }
 
     void Start()
     {
@@ -29,7 +31,7 @@ public class GameManager : MonoBehaviour
     {
         if (inputHandler.GeneratedIncome()) 
         {
-            BalanceManager.Balance += 1;
+            BalanceManager.Balance += incomeAmount;
         }
     }
 }

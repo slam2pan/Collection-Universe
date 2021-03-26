@@ -8,20 +8,20 @@ public class ArtifactShelf : MonoBehaviour
     public GameObject setsParent;
     public GameObject artifactsMenu;
 
-    public void ToggleArtifactMenu()
+    public void CloseSetMenu()
     {
-        if (setMenu.activeSelf)
-        {
-            setMenu.SetActive(false);
-        } else
-        {
-            setMenu.SetActive(true);
-            OpenSetsMenu();
-        }
+        setMenu.SetActive(false);
+    }
+
+    public void CloseArtifactMenu()
+    {
+        artifactsMenu.SetActive(false);
+        setMenu.SetActive(false);
     }
 
     public void OpenSetsMenu()
     {
+        setMenu.SetActive(true);
         setsParent.SetActive(true);
         artifactsMenu.SetActive(false);
     }

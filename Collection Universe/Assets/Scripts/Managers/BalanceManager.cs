@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BalanceManager : MonoBehaviour
 {
     [SerializeField] private BalanceText balanceText;
-    public static int Balance;
-    private int startingBalance = 2000;
+    public static float Balance;
+    private float startingBalance = 0f;
 
     #region Singleton
 
@@ -32,7 +30,7 @@ public class BalanceManager : MonoBehaviour
         balanceText.UpdateBalanceText(Balance);
     }
 
-    public bool PurchaseLootBox(int amount)
+    public bool PurchaseLootBox(float amount)
     {
         if (Balance >= amount)
         {

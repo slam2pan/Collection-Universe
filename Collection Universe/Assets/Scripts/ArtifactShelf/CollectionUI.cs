@@ -8,16 +8,16 @@ public class CollectionUI : MonoBehaviour
     ArtifactSlot[] slots;
     Collection collection;
 
-    void Awake()
+    void Start()
     {
-        slots = artifactsParent.GetComponentsInChildren<ArtifactSlot>(true);
         collection = Collection.instance;
+        slots = artifactsParent.GetComponentsInChildren<ArtifactSlot>(true);
     }
 
     public void UpdateSetUI(Set set)
     {
         Text completionText = setsParent.Find(set.name).Find("SetCompletion").GetComponent<Text>();
-        completionText.text = collection.setItemsCollected(set) + "/" + set.items.Count;
+        completionText.text = collection.SetItemsCollected(set) + "/" + set.items.Count;
     }
 
     public void LoadArtifacts(string setName)

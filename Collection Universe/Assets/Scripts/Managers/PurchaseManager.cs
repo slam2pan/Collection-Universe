@@ -20,8 +20,11 @@ public class PurchaseManager : MonoBehaviour
 
     private BalanceManager balanceManager;
     public TreasureBox treasureBox;
-    private int boxCost = 100;
+    public BuyBoxText buyBoxText;
     Collection collection;
+
+    private float boxCost = 1.0f;
+    private float costMultiplier = 0.1f;
 
     void Start()
     {
@@ -32,9 +35,17 @@ public class PurchaseManager : MonoBehaviour
     public void BuyLootBox()
     {
         if (balanceManager.PurchaseLootBox(boxCost))
-        {
+        {   
+            // create a randomly generated artifact
             Artifact currArtifact = treasureBox.generateReward(GameManager.currentWorld);
-            //Artifact currArtifact = Resources.Load<Artifact>("Artifacts/World1/Mythic/Baseball");
+
+            // if the artifact hasn't been collected, increase box cost
+            if (!collection.IsArtifactCollected(currArtifact))
+            {
+                boxCost += boxCost * costMultiplier;
+                buyBoxText.ChangeBoxText(boxCost);
+            }
+            // add the artifact
             collection.Add(currArtifact);
             Debug.Log("Adding " + currArtifact.name);
         }
